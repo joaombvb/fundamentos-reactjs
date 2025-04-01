@@ -1,7 +1,11 @@
+import styles from './Header.module.css'
+
+import reactLogo from '../assets/react-logo.svg'
+
 export function Header() {
     return (
-        <header>
-            <h1>Header</h1>
+        <header className={styles.header}>
+            <img src={reactLogo} alt="React Logotipo" />
         </header>
     )
 }
