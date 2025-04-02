@@ -13,7 +13,10 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post />
+          <Post 
+            author="João Marcelo Vilas Boas"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+          />
         </main>
       </div>
 
