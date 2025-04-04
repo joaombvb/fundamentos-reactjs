@@ -17,6 +17,10 @@ function App() {
             author="João Marcelo Vilas Boas"
             content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
           />
+          <Post 
+            author="João Marcelo Vilas Boas"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+          />
         </main>
       </div>
 
