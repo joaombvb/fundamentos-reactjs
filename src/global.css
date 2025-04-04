@@ -7,8 +7,17 @@
     --gray-700: #29292e;
     --gray-800: #202024;
     --gray-900: #121214;
+
+    --pink-400: #fb64b6;
     --pink-500: #c34482;
 
+    --red-500: #F75A68;
+
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--pink-500);
 }
 
 * {
@@ -26,7 +35,7 @@ body {
 body, input, textarea, button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.875rem;
 }
 
 
