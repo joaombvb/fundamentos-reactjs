@@ -1,11 +1,13 @@
 import styles from './Post.module.css'
+import { Comment } from './Comment'
+import { Avatar } from './Avatar'
 
 export function Post() {
     return (
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src="https://xesque.rocketseat.dev/users/avatar/profile-35fbe46d-88c8-4083-ade4-2fcde39eccff-1709175086396.jpg" />
+                    <Avatar hasBorder={true} src="https://xesque.rocketseat.dev/users/avatar/profile-35fbe46d-88c8-4083-ade4-2fcde39eccff-1709175086396.jpg" />
 
                     <div className={styles.authorInfo}>
                         <strong>João Marcelo Vilas Boas</strong>
@@ -20,9 +22,24 @@ export function Post() {
                 <p>Fala galeraa 👋</p>
                 <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz com React 🚀</p>
                 <p>
-                    <a href="#">#newproject</a> 
-                    <a href="#">#rocketseat</a>
+                    <a href="#">#newproject</a>{" "}
+                    <a href="#">#react</a>
                 </p>
+            </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback</strong>
+
+                <textarea placeholder="Deixe um comentário" />
+
+                <footer>
+                    <button type="submit">Comentar</button>
+                </footer>
+            </form>
+
+            <div className={styles.commentList}>
+                <Comment />
+                <Comment />
             </div>
         </article>
     )
